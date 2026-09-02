@@ -36,10 +36,10 @@
             // 
             this.lblBienvenidoAlSistema.AutoSize = true;
             this.lblBienvenidoAlSistema.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblBienvenidoAlSistema.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold);
-            this.lblBienvenidoAlSistema.Location = new System.Drawing.Point(155, 54);
+            this.lblBienvenidoAlSistema.Font = new System.Drawing.Font("Cooper Black", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBienvenidoAlSistema.Location = new System.Drawing.Point(147, 45);
             this.lblBienvenidoAlSistema.Name = "lblBienvenidoAlSistema";
-            this.lblBienvenidoAlSistema.Size = new System.Drawing.Size(354, 39);
+            this.lblBienvenidoAlSistema.Size = new System.Drawing.Size(371, 38);
             this.lblBienvenidoAlSistema.TabIndex = 0;
             this.lblBienvenidoAlSistema.Text = "Bienvenido al Sistema";
             // 
@@ -61,6 +61,7 @@
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.lblBienvenidoAlSistema);
             this.Name = "frmInicio1";
+            this.Load += new System.EventHandler(this.frmInicio1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

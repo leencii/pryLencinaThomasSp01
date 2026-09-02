@@ -19,7 +19,12 @@ namespace prySP01
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            this.Close();//cierra el frm
+            this.Close();
+        }
+
+        private void frmInicio1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

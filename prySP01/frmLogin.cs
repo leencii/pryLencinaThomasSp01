@@ -16,32 +16,41 @@ namespace prySP01
         {
             InitializeComponent();
         }
-        int intentos = 0;//contador de intentos
+        int intentos = 0;
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             if ((txtBoxUser.Text == "Administrador" && txtBoxPassword.Text == "admin" ) ||(txtBoxUser.Text == "Operario" && txtBoxPassword.Text == "Operador"))
 
             {
-                this.Hide();//oculta el formulario
-                frmInicio1 f = new frmInicio1();//crea el frmInicio
-                f.Text = txtBoxUser.Text;//asigna el texto de titulo
-                f.ShowDialog();//visualiza y ejecuta el frmInicio
-                this.Show();//visualiza nuevamente este frm
+                this.Hide();
+                frmInicio1 f = new frmInicio1();
+                f.Text = txtBoxUser.Text;
+                f.ShowDialog();
+                this.Show();
             }
             else
             {
                 MessageBox.Show("Datos Incorrectos.Acceso Denegado");
-                intentos++;//incrementa el contador de intentos fallidos
-                if (intentos == 3)//si es 3 se cierra el frm
+                intentos++;
+                if (intentos == 3)
                 {
                     this.Close();
                 }
             }
         }
-        //evento Click del boton "btnCancelar"
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtBoxPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

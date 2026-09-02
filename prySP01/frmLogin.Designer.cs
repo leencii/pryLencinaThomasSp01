@@ -39,24 +39,26 @@
             // lblUser
             // 
             this.lblUser.AutoSize = true;
+            this.lblUser.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUser.Location = new System.Drawing.Point(12, 27);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(43, 13);
+            this.lblUser.Size = new System.Drawing.Size(37, 15);
             this.lblUser.TabIndex = 0;
             this.lblUser.Text = "Usuario";
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
+            this.lblPassword.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.Location = new System.Drawing.Point(12, 94);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(61, 13);
+            this.lblPassword.Size = new System.Drawing.Size(53, 15);
             this.lblPassword.TabIndex = 1;
             this.lblPassword.Text = "Contraseña";
             // 
             // txtBoxUser
             // 
-            this.txtBoxUser.Location = new System.Drawing.Point(96, 24);
+            this.txtBoxUser.Location = new System.Drawing.Point(96, 28);
             this.txtBoxUser.MaxLength = 20;
             this.txtBoxUser.Name = "txtBoxUser";
             this.txtBoxUser.Size = new System.Drawing.Size(154, 20);
@@ -64,16 +66,17 @@
             // 
             // txtBoxPassword
             // 
-            this.txtBoxPassword.Location = new System.Drawing.Point(96, 87);
+            this.txtBoxPassword.Location = new System.Drawing.Point(96, 94);
             this.txtBoxPassword.MaxLength = 20;
             this.txtBoxPassword.Name = "txtBoxPassword";
             this.txtBoxPassword.PasswordChar = '*';
             this.txtBoxPassword.Size = new System.Drawing.Size(154, 20);
             this.txtBoxPassword.TabIndex = 3;
+            this.txtBoxPassword.TextChanged += new System.EventHandler(this.txtBoxPassword_TextChanged);
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(274, 18);
+            this.btnAceptar.Location = new System.Drawing.Point(280, 25);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(90, 30);
             this.btnAceptar.TabIndex = 4;
@@ -83,7 +86,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(274, 81);
+            this.btnCancelar.Location = new System.Drawing.Point(280, 88);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(90, 30);
             this.btnCancelar.TabIndex = 5;
@@ -104,6 +107,7 @@
             this.Controls.Add(this.lblUser);
             this.Name = "frmLogin";
             this.Text = "LOGIN";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
